@@ -31,11 +31,9 @@ table(super$sex, super$sex_geno, useNA = "ifany")
 table(super$gender, super$sex_geno, useNA = "ifany")
 table(super$race_eth, super$ancestry_geno, useNA = "ifany")
 
-super[, .(id, sex, sex_geno, gender)][
-  , agree := as.numeric(sex == sex_geno)
-][
-  agree != 1,
-  ]
+as.data.table(super)[, .(id, sex, sex_geno, gender)
+                     ][, agree := as.numeric(sex == sex_geno)
+                       ][agree != 1,]
 
 write_rds(super, "~/projects/epiq/linkage_test/data/super.rds", compress = "gz")
 
