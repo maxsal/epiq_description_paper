@@ -1,4 +1,5 @@
 message("*beep boop* loading libraries...")
+suppressMessages(library(data.table))
 suppressMessages(library(tidyverse))
 suppressMessages(library(janitor))
 suppressMessages(library(glue))
