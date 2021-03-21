@@ -1,0 +1,7 @@
+1. Sampling design
+2. Characterize respondents vs nonrespondents
+3. Provide description of responses with respect to:
+   a. Financial toxicity
+   b. Occupational exposure
+   c. Life meaning
+4. Table of survey sources by module (exhaustive) - in supplementary
